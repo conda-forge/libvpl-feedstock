@@ -7,7 +7,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/intel/libvpl/archive/refs/tags/v${{ version }}.tar.gz
+  url: https://github.com/intel/libvpl/archive/refs/tags/v${{ version }}.zip
   sha256: 978398c7bb1665a6ad7a1a15cc57dc0204608e56c88436e376b717320a9e63fd
 
 build:
