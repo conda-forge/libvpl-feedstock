@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/intel/libvpl/archive/refs/tags/v${{ version }}.zip
-  sha256: 978398c7bb1665a6ad7a1a15cc57dc0204608e56c88436e376b717320a9e63fd
+  sha256: 719e9b42f31b8c4cc4bc6ef98995c12c6ace400ed5a0dfb7b35a096451b1cc3c
 
 build:
   skip:
