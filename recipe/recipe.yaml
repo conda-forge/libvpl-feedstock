@@ -1,6 +1,6 @@
 context:
   name: libvpl
-  version: "2.15.0"
+  version: "2.16.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://github.com/intel/libvpl/archive/refs/tags/v${{ version }}.zip
-  sha256: 719e9b42f31b8c4cc4bc6ef98995c12c6ace400ed5a0dfb7b35a096451b1cc3c
+  sha256: 0b2ee8da8b9ef07ed4b52bf9ddee05008ec999b7c3c41944d7a9f804631c398e
 
 build:
   skip:
     - win
     - osx
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -31,8 +31,8 @@ requirements:
 
 tests:
   - script:
-    - test -f ${PREFIX}/lib/libvpl.so
-    - test -f ${PREFIX}/include/vpl/mfx.h
+      - test -f ${PREFIX}/lib/libvpl.so
+      - test -f ${PREFIX}/include/vpl/mfx.h
 
 about:
   homepage: https://github.com/intel/media-driver
